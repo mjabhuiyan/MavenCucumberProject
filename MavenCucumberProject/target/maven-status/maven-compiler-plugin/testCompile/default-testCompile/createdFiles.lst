@@ -1,4 +1,5 @@
-stepPack\AbstractClass.class
+stepPack\FundTransferStepdefinition.class
 stepPack\OurWebSiteStepDefinition.class
 stepPack\Hook.class
 stepPack\TestRunner.class
+stepPack\AbstractClass.class

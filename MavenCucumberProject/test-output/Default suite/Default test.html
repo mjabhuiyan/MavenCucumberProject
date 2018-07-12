@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 04 07:15:19 CDT 2018</td>
+<td>Started on:</td><td>Thu Jul 12 18:05:57 CDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30147 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31805 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,108 +67,216 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will able to Registration by using valid data", "Registration form fillup"<br/>
-<a href="#Output-1529303412" onClick='toggleBox("Output-1529303412", this, "Show output", "Hide output");'>Show output</a>
+<td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid payee and Valid Amount", "Fund Transfer functionality"<br/>
+<a href="#Output-1302984483" onClick='toggleBox("Output-1302984483", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1529303412" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1529303412">
-<div "result">user is on registration form web page (PASSED : 0s)</div><br/>
-<div "result">user will Enter &quot;Farhana&quot;, &quot;Zaman&quot;,&quot;farhana@yahoo.com&quot;, &quot;farhana@yahoo.com&quot;,&quot;far7645&quot; (PASSED : 0s)</div><br/>
-<div "result">user will click on &quot;Female&quot; (PASSED : 0s)</div><br/>
-<div "result">user will select &quot;Jun&quot;,&quot;25&quot;, &quot;1987&quot; (PASSED : 0s)</div><br/>
-<div "result">user will able to register successfully (PASSED : 0s)</div><br/>
+<a href="#Output-1302984483" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1302984483">
+<div "result">I am on fund transfer web page (FAILED : 0s)</div><br/>
+<div "result">I enter valid payee &quot;Jim&quot; and valid amount &quot;500&quot; (SKIPPED)</div><br/>
+<div "result">I click on Transfer button (SKIPPED)</div><br/>
+<div "result">I should get success message &quot;$500 transferred successfully to Jim!!&quot; (SKIPPED)</div><br/>
 </div>
 </td>
-<td></td>
-<td>8</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ?.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1302984483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1302984483'><pre>java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ?.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:5)
+</pre></div></td>
+<td>3</td>
+<td>stepPack.TestRunner@78ffe6dc</td></tr>
+<tr>
+<td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid payee and Invalid Amount", "Fund Transfer functionality"<br/>
+<a href="#Output-1440332016" onClick='toggleBox("Output-1440332016", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1440332016" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1440332016">
+<div "result">I am on fund transfer web page (FAILED : 0s)</div><br/>
+<div "result">I enter valid payee &quot;Jim&quot; and invalid amount &quot;6000&quot; (SKIPPED)</div><br/>
+<div "result">I click on Transfer button (SKIPPED)</div><br/>
+<div "result">I should get fail message &quot;Transfer failed!! account cannot be overdrawn&quot; (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ?.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1440332016", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1440332016'><pre>java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ?.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:11)
+</pre></div></td>
+<td>3</td>
+<td>stepPack.TestRunner@78ffe6dc</td></tr>
+<tr>
+<td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid payee and Valid Amount", "Fund Transfer functionality"<br/>
+<a href="#Output-1624203949" onClick='toggleBox("Output-1624203949", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1624203949" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1624203949">
+<div "result">I am on fund transfer web page (FAILED : 0s)</div><br/>
+<div "result">I enter invalid payee &quot;John&quot; and valid amount &quot;500&quot; (SKIPPED)</div><br/>
+<div "result">I click on Transfer button (SKIPPED)</div><br/>
+<div "result">I should get fail message &quot;Transfer failed!! &#x27;John&#x27; is not approved. Please contact your branch&quot; (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ?.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1624203949", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1624203949'><pre>java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ?.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:17)
+</pre></div></td>
+<td>3</td>
 <td>stepPack.TestRunner@78ffe6dc</td></tr>
 <tr>
 <td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will able to Registration by using valid data", "Registration form fillup"<br/>
-<a href="#Output-1964697764" onClick='toggleBox("Output-1964697764", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-728746911" onClick='toggleBox("Output-728746911", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1964697764" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1964697764">
-<div "result">user is on registration form web page (PASSED : 0s)</div><br/>
-<div "result">user will Enter &quot;Mohammed&quot;, &quot;Islam&quot;,&quot;islam@gmail.com&quot;, &quot;islam@gmail.com&quot;,&quot;islam423&quot; (PASSED : 0s)</div><br/>
-<div "result">user will click on &quot;Male&quot; (PASSED : 0s)</div><br/>
-<div "result">user will select &quot;May&quot;,&quot;26&quot;, &quot;1975&quot; (PASSED : 0s)</div><br/>
-<div "result">user will able to register successfully (PASSED : 0s)</div><br/>
+<a href="#Output-728746911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-728746911">
+<div "result">user is on registration form web page (FAILED : 0s)</div><br/>
+<div "result">user will Enter &quot;Farhana&quot;, &quot;Zaman&quot;,&quot;farhana@yahoo.com&quot;, &quot;farhana@yahoo.com&quot;,&quot;far7645&quot; (SKIPPED)</div><br/>
+<div "result">user will click on &quot;Female&quot; (SKIPPED)</div><br/>
+<div "result">user will select &quot;Jun&quot;,&quot;25&quot;, &quot;1987&quot; (SKIPPED)</div><br/>
+<div "result">user will able to register successfully (SKIPPED)</div><br/>
 </div>
 </td>
-<td></td>
-<td>4</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace728746911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace728746911'><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div></td>
+<td>3</td>
 <td>stepPack.TestRunner@78ffe6dc</td></tr>
 <tr>
 <td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will able to Registration by using valid data", "Registration form fillup"<br/>
-<a href="#Output-1804424410" onClick='toggleBox("Output-1804424410", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-662000775" onClick='toggleBox("Output-662000775", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1804424410" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1804424410">
-<div "result">user is on registration form web page (PASSED : 0s)</div><br/>
-<div "result">user will Enter &quot;Padma&quot;, &quot;Khan&quot;,&quot;padma@yahoo.com&quot;, &quot;padma@yahoo.com&quot;,&quot;padm1432&quot; (PASSED : 0s)</div><br/>
-<div "result">user will click on &quot;Female&quot; (PASSED : 0s)</div><br/>
-<div "result">user will select &quot;Feb&quot;,&quot;27&quot;, &quot;1985&quot; (PASSED : 0s)</div><br/>
-<div "result">user will able to register successfully (PASSED : 0s)</div><br/>
+<a href="#Output-662000775" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-662000775">
+<div "result">user is on registration form web page (FAILED : 0s)</div><br/>
+<div "result">user will Enter &quot;Mohammed&quot;, &quot;Islam&quot;,&quot;islam@gmail.com&quot;, &quot;islam@gmail.com&quot;,&quot;islam423&quot; (SKIPPED)</div><br/>
+<div "result">user will click on &quot;Male&quot; (SKIPPED)</div><br/>
+<div "result">user will select &quot;May&quot;,&quot;26&quot;, &quot;1975&quot; (SKIPPED)</div><br/>
+<div "result">user will able to register successfully (SKIPPED)</div><br/>
 </div>
 </td>
-<td></td>
-<td>4</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace662000775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace662000775'><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div></td>
+<td>3</td>
 <td>stepPack.TestRunner@78ffe6dc</td></tr>
 <tr>
 <td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will able to Registration by using valid data", "Registration form fillup"<br/>
-<a href="#Output-810898134" onClick='toggleBox("Output-810898134", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1445384588" onClick='toggleBox("Output-1445384588", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-810898134" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-810898134">
-<div "result">user is on registration form web page (PASSED : 0s)</div><br/>
-<div "result">user will Enter &quot;Farhana&quot;, &quot;Zaman&quot;,&quot;farhana@yahoo.com&quot;, &quot;farhana@yahoo.com&quot;,&quot;far7645&quot; (PASSED : 0s)</div><br/>
-<div "result">user will click on &quot;Female&quot; (PASSED : 0s)</div><br/>
-<div "result">user will select &quot;Jun&quot;,&quot;28&quot;, &quot;1987&quot; (PASSED : 0s)</div><br/>
-<div "result">user will able to register successfully (PASSED : 0s)</div><br/>
+<a href="#Output-1445384588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1445384588">
+<div "result">user is on registration form web page (FAILED : 0s)</div><br/>
+<div "result">user will Enter &quot;Padma&quot;, &quot;Khan&quot;,&quot;padma@yahoo.com&quot;, &quot;padma@yahoo.com&quot;,&quot;padm1432&quot; (SKIPPED)</div><br/>
+<div "result">user will click on &quot;Female&quot; (SKIPPED)</div><br/>
+<div "result">user will select &quot;Feb&quot;,&quot;27&quot;, &quot;1985&quot; (SKIPPED)</div><br/>
+<div "result">user will able to register successfully (SKIPPED)</div><br/>
 </div>
 </td>
-<td></td>
-<td>4</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1445384588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1445384588'><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div></td>
+<td>3</td>
 <td>stepPack.TestRunner@78ffe6dc</td></tr>
 <tr>
 <td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will able to Registration by using valid data", "Registration form fillup"<br/>
-<a href="#Output-821725803" onClick='toggleBox("Output-821725803", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2077845538" onClick='toggleBox("Output-2077845538", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-821725803" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-821725803">
-<div "result">user is on registration form web page (PASSED : 0s)</div><br/>
-<div "result">user will Enter &quot;Mohammed&quot;, &quot;Zahir&quot;,&quot;islam@gmail.com&quot;, &quot;islam@gmail.com&quot;,&quot;islam423&quot; (PASSED : 0s)</div><br/>
-<div "result">user will click on &quot;Male&quot; (PASSED : 0s)</div><br/>
-<div "result">user will select &quot;May&quot;,&quot;29&quot;, &quot;1975&quot; (PASSED : 0s)</div><br/>
-<div "result">user will able to register successfully (PASSED : 0s)</div><br/>
+<a href="#Output-2077845538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2077845538">
+<div "result">user is on registration form web page (FAILED : 0s)</div><br/>
+<div "result">user will Enter &quot;Farhana&quot;, &quot;Zaman&quot;,&quot;farhana@yahoo.com&quot;, &quot;farhana@yahoo.com&quot;,&quot;far7645&quot; (SKIPPED)</div><br/>
+<div "result">user will click on &quot;Female&quot; (SKIPPED)</div><br/>
+<div "result">user will select &quot;Jun&quot;,&quot;28&quot;, &quot;1987&quot; (SKIPPED)</div><br/>
+<div "result">user will able to register successfully (SKIPPED)</div><br/>
 </div>
 </td>
-<td></td>
-<td>4</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2077845538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2077845538'><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div></td>
+<td>3</td>
 <td>stepPack.TestRunner@78ffe6dc</td></tr>
 <tr>
 <td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will able to Registration by using valid data", "Registration form fillup"<br/>
-<a href="#Output-194037157" onClick='toggleBox("Output-194037157", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1541427914" onClick='toggleBox("Output-1541427914", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-194037157" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-194037157">
-<div "result">user is on registration form web page (PASSED : 0s)</div><br/>
-<div "result">user will Enter &quot;Oyshi&quot;, &quot;Khan&quot;,&quot;padma@yahoo.com&quot;, &quot;padma@yahoo.com&quot;,&quot;padm1432&quot; (PASSED : 0s)</div><br/>
-<div "result">user will click on &quot;Female&quot; (PASSED : 0s)</div><br/>
-<div "result">user will select &quot;Feb&quot;,&quot;30&quot;, &quot;1985&quot; (PASSED : 0s)</div><br/>
-<div "result">user will able to register successfully (PASSED : 0s)</div><br/>
+<a href="#Output-1541427914" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1541427914">
+<div "result">user is on registration form web page (FAILED : 0s)</div><br/>
+<div "result">user will Enter &quot;Mohammed&quot;, &quot;Zahir&quot;,&quot;islam@gmail.com&quot;, &quot;islam@gmail.com&quot;,&quot;islam423&quot; (SKIPPED)</div><br/>
+<div "result">user will click on &quot;Male&quot; (SKIPPED)</div><br/>
+<div "result">user will select &quot;May&quot;,&quot;29&quot;, &quot;1975&quot; (SKIPPED)</div><br/>
+<div "result">user will able to register successfully (SKIPPED)</div><br/>
 </div>
 </td>
-<td></td>
-<td>4</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1541427914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1541427914'><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div></td>
+<td>3</td>
+<td>stepPack.TestRunner@78ffe6dc</td></tr>
+<tr>
+<td title='stepPack.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepPack.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will able to Registration by using valid data", "Registration form fillup"<br/>
+<a href="#Output-1288163341" onClick='toggleBox("Output-1288163341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1288163341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1288163341">
+<div "result">user is on registration form web page (FAILED : 0s)</div><br/>
+<div "result">user will Enter &quot;Oyshi&quot;, &quot;Khan&quot;,&quot;padma@yahoo.com&quot;, &quot;padma@yahoo.com&quot;,&quot;padm1432&quot; (SKIPPED)</div><br/>
+<div "result">user will click on &quot;Female&quot; (SKIPPED)</div><br/>
+<div "result">user will select &quot;Feb&quot;,&quot;30&quot;, &quot;1985&quot; (SKIPPED)</div><br/>
+<div "result">user will able to register successfully (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1288163341", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1288163341'><pre>java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</pre></div></td>
+<td>3</td>
 <td>stepPack.TestRunner@78ffe6dc</td></tr>
 </table><p>
 </body>

@@ -3,7 +3,7 @@ package stepPack;
 import org.openqa.selenium.WebDriver;
 
 public abstract class AbstractClass {
-	 static WebDriver driver;
+	  WebDriver driver;
 
   public  WebDriver getDriver() {
 

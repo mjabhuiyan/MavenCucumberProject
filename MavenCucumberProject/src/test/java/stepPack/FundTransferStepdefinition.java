@@ -1,18 +1,21 @@
 package stepPack;
 
 import org.openqa.selenium.By;
+
 import org.testng.Assert;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+
 public class FundTransferStepdefinition extends AbstractClass{
+	
 	
 	 @Given("^I am on fund transfer web page$")
 	    public void i_am_on_fund_transfer_web_page() throws Throwable {
 
-	        driver.get("file:///E:/WebSite/JavaScript/FundTransfer.html");
+	        driver.get("file:///D:/IT/FundTransfer.html");
 
 	    }
 

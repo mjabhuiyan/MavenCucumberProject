@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="stepPack.TestRunner" time="23.474" errors="0" skipped="0">
+<testsuite tests="9" failures="9" name="stepPack.TestRunner" time="33.167" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="10.0.1+10"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre-10.0.1\bin"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-10.0.1\bin"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\mjabh\git\MavenCucumberProject\MavenCucumberProject"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -21,40 +21,38 @@
     <property name="java.runtime.version" value="10.0.1+10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\WINDOWS\TEMP\"/>
+    <property name="java.io.tmpdir" value="C:\Users\mjabh\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.5.4\bin\..\bin\m2.conf"/>
+    <property name="classworlds.conf" value="C:\Users\mjabh\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5641569545181551156.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk-10.0.1\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-10.0.1\;C:\Program Files\apache-maven-3.5.4\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
-    <property name="maven.conf" value="C:\Program Files\apache-maven-3.5.4\bin\../conf"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-10.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk-10.0.1\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4\bin;C:\Program Files\Git\cmd;C:\Users\mjabh\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="54.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.5.4\bin\..\lib\jansi-native"/>
-    <property name="user.home" value="C:\WINDOWS\system32\config\systemprofile"/>
+    <property name="user.home" value="C:\Users\mjabh"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="10"/>
-    <property name="user.name" value="DESKTOP-ASUMK46$"/>
-    <property name="java.class.path" value="C:\Program Files\apache-maven-3.5.4\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="user.name" value="mjabh"/>
+    <property name="java.class.path" value="C:\Users\mjabh\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.9.0.20180606-2035\jars\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="10"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
-    <property name="java.home" value="C:\Program Files\Java\jre-10.0.1"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-10.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="10.0.1"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\apache-maven-3.5.4\bin\.."/>
+    <property name="maven.home" value="C:\Users\mjabh\git\MavenCucumberProject\MavenCucumberProject\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2018-04-17"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
@@ -64,10 +62,105 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="stepPack.TestRunner" name="runScenario" time="4.377"/>
-  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.828"/>
-  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.901"/>
-  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.822"/>
-  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.766"/>
-  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.78"/>
+  <testcase classname="stepPack.TestRunner" name="runScenario" time="4.061">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ✽.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:5)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@6ee52dcd
+</system-out>
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 38242
+Only local connections are allowed.
+Jul 12, 2018 6:11:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.23">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ✽.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:11)
+</failure>
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 28154
+Only local connections are allowed.
+Jul 12, 2018 6:11:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.236">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ✽.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:17)
+</failure>
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 29538
+Only local connections are allowed.
+Jul 12, 2018 6:11:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.527">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ✽.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</failure>
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 18369
+Only local connections are allowed.
+Jul 12, 2018 6:11:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.581">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ✽.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</failure>
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 48857
+Only local connections are allowed.
+Jul 12, 2018 6:11:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="stepPack.TestRunner" name="runScenario" time="5.857">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ✽.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</failure>
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 43429
+Only local connections are allowed.
+Jul 12, 2018 6:11:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.198">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ✽.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</failure>
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 39111
+Only local connections are allowed.
+Jul 12, 2018 6:11:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.242">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ✽.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</failure>
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 27137
+Only local connections are allowed.
+Jul 12, 2018 6:11:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="stepPack.TestRunner" name="runScenario" time="3.235">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ✽.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+</failure>
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 2399
+Only local connections are allowed.
+Jul 12, 2018 6:11:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
 </testsuite>

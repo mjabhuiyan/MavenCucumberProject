@@ -1,4 +1,49 @@
 -------------------------------------------------------------------------------
 Test set: stepPack.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.934 sec
+Tests run: 9, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 33.837 sec <<< FAILURE!
+runScenario(stepPack.TestRunner)  Time elapsed: 4.061 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ?.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:5)
+
+runScenario(stepPack.TestRunner)  Time elapsed: 3.23 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ?.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:11)
+
+runScenario(stepPack.TestRunner)  Time elapsed: 3.236 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at stepPack.FundTransferStepdefinition.i_am_on_fund_transfer_web_page(FundTransferStepdefinition.java:18)
+	at ?.I am on fund transfer web page(src/test/resources/Feature/FundTranfer.feature:17)
+
+runScenario(stepPack.TestRunner)  Time elapsed: 3.527 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+
+runScenario(stepPack.TestRunner)  Time elapsed: 3.581 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+
+runScenario(stepPack.TestRunner)  Time elapsed: 5.857 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+
+runScenario(stepPack.TestRunner)  Time elapsed: 3.198 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+
+runScenario(stepPack.TestRunner)  Time elapsed: 3.242 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+
+runScenario(stepPack.TestRunner)  Time elapsed: 3.235 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at stepPack.OurWebSiteStepDefinition.user_is_on_registration_form_web_page(OurWebSiteStepDefinition.java:14)
+	at ?.user is on registration form web page(src/test/resources/Feature/OurWebSite.feature:5)
+
